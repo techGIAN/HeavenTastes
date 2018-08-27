@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Food Fiesta </title>
+		<link rel="stylesheet" href="food.css" charset="utf-8"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:bold">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:light">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<link href="css/logoiconfont.css" rel="stylesheet">
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<style>
+  			.carousel-inner > .item > img,
+  			.carousel-inner > .item > a > img {
+      			width: 100%;
+      			height: 80% !important;
+      			margin-top: 0px;
+  			}
+
+  			.carousel-caption {
+  				margin-bottom: 110px !important;
+  			}
+
+  			.carousel-indicators {
+    			/*text-align: center;
+    			float: right;
+    			right: 2% !important;
+    			left: inherit;*/
+    			margin-bottom: 90px !important;
+			}
+
+			#titleId {
+				
+				display: block !important;
+    			margin-left: auto !important;
+    			margin-right: auto !important;
+
+    			position: absolute;
+				 z-index: 10;
+			}
+		</style>
+	</head>
+	<body onload="onload();" data-spy="scroll" data-target=".navbar" data-offset="50">
+		
+		<div id="loader"></div>
+		<div style="display:none;" id="myDiv" class="animate-bottom">
+			<div>
+		<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div id="navbar" class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--<a class="navbar-brand">
+          	<div class="dropdown">
+   				<img src="menu.png" alt="menu" height="30px" width="30px">
+    			<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+      				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+      				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+      				<li role="presentation" class="divider"></li>
+      				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>    
+    			</ul>
+  			</div>
+          </a>-->
+          <div id="navbar" class="navbar-collapse-collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="menu.png" alt="menu" height="30px" width="30px"></a>
+        		<ul class="dropdown-menu">
+          			<li><a href="#">Blog</a></li>
+          			<li><a href="#">Reviews</a></li>
+          			<li><a href="#">Masterpieces</a></li>
+          			<li role="presentation" class="divider"></li>
+         			<li><a href="#">About</a></li>
+        		</ul>
+      		</li>
+      		<li class="navbar-brand">HEAVEN'S TASTES</li>
+          </ul>
+        </div>
+        </div>
+        <!--<div id="navbar" class="navbar-collapse-collapse">
+          <ul class="nav navbar-nav navbar-center">
+            <li class="hoverThis"><a href="#projects">
+            	<img src="chefLogo.png" alt="chef_logo" id="logo" height="20%" width="20%"/>
+            </a></li>
+          </ul>
+        </div>-->
+        <div id="navbar" class="navbar-collapse-collapse">
+          <ul class="nav navbar-nav navbar-right">
+          	<li class="hoverThis"><a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="fb" height="35px" width="35px"></a></li>
+          	<li class="hoverThis"><a href="https://www.twitter.com/" target="_blank"><img src="twit.png" alt="twitter" height="35px" width="35px"></a></li>
+            <li class="hoverThis"><a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="insta" height="35px" width="35px"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </header>
+
+	<!--<div class="jumbotron jumbotron-main" id="home"> --><!--Define background color of jumbotron in css/bootstrap.min.css-->
+
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+	  <!--<img src="title.png" alt="title" id="titleId">-->
+      <div class="item active">
+      	<!--image sizes of carousel are 600x330-->
+        <img src="chickenEdit.jpg" alt="chicken" width="460" height="245">
+        <div class="carousel-caption">
+          <h3>Chicken Cordon Bleu</h3>
+          <p>Made of chicken, ham and cheese served with Dijon sauce</p>
+          <!--<br>
+          <br>
+          <br>
+          <a href="#about" data-id="about" class="scroll-link">
+			<div class="scroll-indicator rotateBottomReveal">
+				<span class="down"> <a id="navbar" class="dontChangeColor" href="#aboutMe"><i class="fas fa-arrow-circle-down fa-5x"></i> </a> </span>
+			</div>
+		 </a>-->
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="steakEdit.jpg" alt="Rib-Eye Steak" width="460" height="245">
+        <div class="carousel-caption">
+          <h3>Rib-Eye Steak</h3>
+          <p>Texas-style smoked rib-eye steak fresh from the grill</p>
+          <!--<br>
+          <br>
+          <br>
+          <a href="#about" data-id="about" class="scroll-link">
+			<div class="scroll-indicator rotateBottomReveal">
+				<span class="down"> <a id="navbar" class="dontChangeColor" href="#aboutMe"><i class="fas fa-arrow-circle-down fa-5x"></i> </a> </span>
+			</div>
+		 </a>-->
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="pastaEdit.jpg" alt="Pasta" width="460" height="245">
+        <div class="carousel-caption">
+          <h3>White-Sauce Pasta</h3>
+          <p>Pasta in white Carbonara sauce</p>
+          <!--<br>
+          <br>
+          <br>
+          <a href="#about" data-id="about" class="scroll-link">
+			<div class="scroll-indicator rotateBottomReveal">
+				<span class="down"> <a id="navbar" class="dontChangeColor" href="#aboutMe"><i class="fas fa-arrow-circle-down fa-5x"></i> </a> </span>
+			</div>
+		 </a>-->
+        </div>
+      </div>
+
+  
+    </div>
+
+    <!-- Left and right controls -->
+    
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+	<section id="projects" class="background1 section-padding">
+		<div class="container">
+			<div class="rowCenter">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8"><div id="masterpieceTitle"><span class="hideMe">i</span>Chef's Masterpieces</div></div>
+				<div class="col-sm-2"></div>
+			</div>
+			<hr align="center" width="200px" class="hrSpec">
+			<div class="outer">
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<div class="border">
+						<img src="pizza.jpg" alt="pizza" class="foods">
+						<div class="foodCaption"><div class="textCaption">Pizza</div></div>
+						<div class="middle">
+    						<div class="text"><a href="construction.html" target="_blank" class="linkFood" style="color: white; text-decoration: none">RECIPE</a></div>
+  						</div>
+					</div>
+					<div class="border">
+						<img src="milkshake.jpg" alt="milkshake" class="foods">
+						<div class="foodCaption"><div class="textCaption">Milkshake</div></div>
+						<div class="middle">
+    						<div class="text"><a href="construction.html" target="_blank" class="linkFood" style="color: white; text-decoration: none">RECIPE</a></div>
+  						</div>
+					</div>
+					<div class="border">
+						<img src="chickenPesto.jpg" alt="chicken and pesto" class="foods">
+						<div class="foodCaption"><div class="textCaption">Pesto Chicken</div></div>
+						<div class="middle">
+    						<div class="text"><a href="construction.html" target="_blank" class="linkFood" style="color: white; text-decoration: none">RECIPE</a></div>
+  						</div>
+					</div>
+					<div class="border">
+						<img src="cheesecake.jpg" alt="oreo cheesecake" class="foods">
+						<div class="foodCaption"><div class="textCaption">Oreo Cheesecake</div></div>
+						<div class="middle">
+    						<div class="text"><a href="construction.html" target="_blank" class="linkFood" style="color: white; text-decoration: none">RECIPE</a></div>
+  						</div>
+					</div>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<div class="border">
+						<img src="omelette.jpg" alt="omelette" class="foods">
+						<div class="foodCaption"><div class="textCaption">Omelette</div></div>
+						<div class="middle">
+    						<div class="text"><a href="construction.html" target="_blank" class="linkFood" style="color: white; text-decoration: none">RECIPE</a></div>
+  						</div>
+					</div>
+					<div class="border">
+						<img src="pesto.jpg" alt="pesto" class="foods">
+						<div class="foodCaption"><div class="textCaption">Pesto</div></div>
+						<div class="middle">
+    						<div class="text"><a href="construction.html" target="_blank" class="linkFood" style="color: white; text-decoration: none">RECIPE</a></div>
+  						</div>
+					</div>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+
+			
+<!--
+			<h4 id="colorChangeRed">Leave a Message</h4>
+			<hr align="left" width="400px" class="hrContact">
+
+			<div class="form-group">
+  				<label for="usr">Name:</label>
+  				<input type="text" class="form-control" id="usr">
+			</div>
+			<div class="form-group">
+  				<label for="email">Email:</label>
+  				<input type="email" class="form-control" id="email">
+			</div>
+			<div class="form-group">
+  				<label for="comment">Message:</label>
+  				<textarea class="form-control" rows="5" id="comment"></textarea>
+			</div>
+			<div class="left" class="col-sm-10">
+      			<button id="butSubmit" type="submit" class="btn btn-primary">Submit</button>
+    		</div>-->
+		</div>
+
+	</section>
+	<br>
+			<br>
+			<br>
+
+	<footer class="background2 footer-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 text-small text-center">
+					<hr>
+					<button id="buttonFooter" type="button" class="btn btn-primary btn-up-footer btn-lg round scroll-top">TOP</button>
+					<p id="foot" class="no-margin">Heaven's Tastes | Last updated: August 26, 2018</p>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</footer>
+</div>
+<div>
+	<script>
+
+		  // Add slideDown animation to Bootstrap dropdown when expanding.
+  $('.dropdown').on('show.bs.dropdown', function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+  });
+
+  // Add slideUp animation to Bootstrap dropdown when collapsing.
+  $('.dropdown').on('hide.bs.dropdown', function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+  });
+
+$(document).ready(function(){
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+  $("#navbar a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+
+/* ---- nav smooth scroll ---- */
+$(document).ready(function() {
+    $('.scroll-link').on('click', function(event){
+        event.preventDefault();
+        var sectionID = $(this).attr("data-id");
+        scrollToID('#' + sectionID, 750);
+    });
+    $('.scroll-top').on('click', function(event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop:0}, 1200);       
+    });
+});
+
+/* ---- navbar offset ---- */
+function scrollToID(id, speed){
+    var offSet = 69;
+    var targetOffset = $(id).offset().top - offSet;
+    $('html,body').animate({scrollTop:targetOffset}, speed);
+}
+var myVar;
+
+function onload() {
+    myVar = setTimeout(showPage, 1500);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+	</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> 404 - Not Found </title>
+		<link rel="stylesheet" href="food.css" charset="utf-8"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:bold">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:light">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<link href="css/logoiconfont.css" rel="stylesheet">
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<style>
+  			/*.carousel-inner > .item > img,
+  			.carousel-inner > .item > a > img {
+      			width: 100%;
+      			height: 80% !important;
+      			margin-top: 0px;
+  			}
+
+  			.carousel-caption {
+  				margin-bottom: 110px !important;
+  			}
+
+  			.carousel-indicators {
+    			text-align: center;
+    			float: right;
+    			right: 2% !important;
+    			left: inherit;
+    			margin-bottom: 90px !important;
+			}
+
+			#titleId {
+				
+				display: block !important;
+    			margin-left: auto !important;
+    			margin-right: auto !important;
+
+    			position: absolute;
+				 z-index: 10;
+			}*/
+		</style>
+	</head>
+	<body onload="onload();" data-spy="scroll" data-target=".navbar" data-offset="50">
+		
+		<div id="loader"></div>
+		<div style="display:none;" id="myDiv" class="animate-bottom">
+			<div>
+		<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div id="navbar" class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--<a class="navbar-brand">
+          	<div class="dropdown">
+   				<img src="menu.png" alt="menu" height="30px" width="30px">
+    			<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+      				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+      				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+      				<li role="presentation" class="divider"></li>
+      				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>    
+    			</ul>
+  			</div>
+          </a>-->
+          <div id="navbar" class="navbar-collapse-collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="menu.png" alt="menu" height="30px" width="30px"></a>
+        		<ul class="dropdown-menu">
+          			<li><a href="#">Blog</a></li>
+          			<li><a href="#">Reviews</a></li>
+          			<li><a href="#">Masterpieces</a></li>
+          			<li role="presentation" class="divider"></li>
+         			<li><a href="#">About</a></li>
+        		</ul>
+      		</li>
+      		<li class="navbar-brand">HEAVEN'S TASTES</li>
+          </ul>
+        </div>
+        </div>
+        <!--<div id="navbar" class="navbar-collapse-collapse">
+          <ul class="nav navbar-nav navbar-center">
+            <li class="hoverThis"><a href="#projects">
+            	<img src="chefLogo.png" alt="chef_logo" id="logo" height="20%" width="20%"/>
+            </a></li>
+          </ul>
+        </div>-->
+        <div id="navbar" class="navbar-collapse-collapse">
+          <ul class="nav navbar-nav navbar-right">
+          	<li class="hoverThis"><a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="fb" height="35px" width="35px"></a></li>
+          	<li class="hoverThis"><a href="https://www.twitter.com/" target="_blank"><img src="twit.png" alt="twitter" height="35px" width="35px"></a></li>
+            <li class="hoverThis"><a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="insta" height="35px" width="35px"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </header>
+
+  <section class="background1 section-padding">
+    <div class="constr" style="margin-top: 8%; margin-left:12%">
+      <h3>Error 404 - Page Not Found</h3>
+	   Sorry, but this page is still under construction. Please check back again later.
+   </div>
+  </section>
+	<br>
+			<br>
+			<br>
+
+	<footer class="background2 footer-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 text-small text-center">
+					<button id="buttonFooter" type="button" class="btn btn-primary btn-up-footer btn-lg round scroll-top" onclick="self.close()">CLOSE</button>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</footer>
+</div>
+<div>
+	<script>
+
+		  // Add slideDown animation to Bootstrap dropdown when expanding.
+  $('.dropdown').on('show.bs.dropdown', function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+  });
+
+  // Add slideUp animation to Bootstrap dropdown when collapsing.
+  $('.dropdown').on('hide.bs.dropdown', function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+  });
+
+$(document).ready(function(){
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+  $("#navbar a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+
+/* ---- nav smooth scroll ---- */
+$(document).ready(function() {
+    $('.scroll-link').on('click', function(event){
+        event.preventDefault();
+        var sectionID = $(this).attr("data-id");
+        scrollToID('#' + sectionID, 750);
+    });
+    $('.scroll-top').on('click', function(event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop:0}, 1200);       
+    });
+});
+
+/* ---- navbar offset ---- */
+function scrollToID(id, speed){
+    var offSet = 69;
+    var targetOffset = $(id).offset().top - offSet;
+    $('html,body').animate({scrollTop:targetOffset}, speed);
+}
+var myVar;
+
+function onload() {
+    myVar = setTimeout(showPage, 1500);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+	</body>
+</html>
